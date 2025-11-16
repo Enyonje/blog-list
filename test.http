@@ -11,3 +11,32 @@ Content-Type: application/json
   "url": "https://evans.dev/redis-caching",
   "likes": 20
 }
+
+POST /api/blogs
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "title": "Secured Blog",
+  "author": "Evans",
+  "url": "https://evans.dev/secure",
+  "likes": 10
+}
+
+POST /api/login
+Content-Type: application/json
+
+{
+  "username": "evans",
+  "password": "securepass"
+}
+
+POST /api/users
+Content-Type: application/json
+
+{
+  "username": "evans",
+  "name": "Evans Nyonje",
+  "password": "securepass"
+}
+GET /api/users
